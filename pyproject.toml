@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling>=1.24.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "img-tui"
+version = "1.0.0"
+description = "Offline keyboard-first image compression TUI inspired by ytd-tui and iLoveIMG."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = [
+    "pillow>=11.0.0",
+]
+
+[project.scripts]
+img-tui = "img_tui.__main__:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/img_tui"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
