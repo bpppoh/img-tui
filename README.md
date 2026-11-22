@@ -21,6 +21,13 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-10B981?style=flat-square" alt="MIT License" /></a>
   <img src="https://img.shields.io/badge/100%25%20offline-no%20uploads-0EA5E9?style=flat-square" alt="100% Offline" />
   <img src="https://img.shields.io/badge/platform-macOS%20%7C%20Linux-64748B?style=flat-square" alt="macOS and Linux" />
+  <a href="https://github.com/bpppoh/homebrew-tap"><img src="https://img.shields.io/badge/homebrew-bpppoh%2Ftap-F59E0B?style=flat-square&logo=homebrew&logoColor=white" alt="Homebrew Tap" /></a>
+</p>
+
+<br />
+
+<p>
+  <img src="assets/demo.gif" alt="img-tui interactive terminal demo" width="840" />
 </p>
 
 </div>
