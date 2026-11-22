@@ -89,27 +89,29 @@ Most image optimizers force you to choose between uploading private assets to we
 
 ## Installation
 
-### Prerequisites
+### Homebrew (macOS & Linux — Recommended)
 
-- **Python 3.11+** (only Python runtime dependency is `pillow>=11.0.0`, installed automatically)
-- Recommended native compression binaries (optional — `img-tui` falls back cleanly to Pillow if omitted):
-
-**macOS (Homebrew):**
+Includes Python, Pillow, and all native iLoveIMG-grade encoders (`mozjpeg`, `pngquant`, `oxipng`, `webp`, `gifsicle`) automatically:
 
 ```sh
-brew install mozjpeg pngquant oxipng webp gifsicle ffmpeg
+brew install bpppoh/tap/img-tui
 ```
 
-**Ubuntu / Debian:**
+Or tap first, then install:
 
 ```sh
-sudo apt update && sudo apt install -y pngquant webp gifsicle ffmpeg
-# Optional: oxipng / mozjpeg for maximum compression efficiency
+brew tap bpppoh/tap
+brew install img-tui
 ```
 
-### Install `img-tui`
+### Alternative: `uv` / `pipx` / Source
 
-**Using `uv` (recommended):**
+If you prefer `uv` or `pipx` instead of Homebrew, install the optional native codecs separately:
+
+- **macOS:** `brew install mozjpeg pngquant oxipng webp gifsicle` (built-in `sips` handles HEIC)
+- **Ubuntu / Debian:** `sudo apt update && sudo apt install -y pngquant webp gifsicle ffmpeg`
+
+**Using `uv`:**
 
 ```sh
 uv tool install git+https://github.com/bpppoh/img-tui.git
